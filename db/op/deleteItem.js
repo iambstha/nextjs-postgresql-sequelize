@@ -1,17 +1,17 @@
 "use server"
 import Item from "@/models/Item"
 
-const updateItem = async (name,price,id) => {
+const deleteItem = async (id) => {
     try {
-        await Item.update({name,price},{
+        await Item.destroy({
             where: {
                 id: id
             }
         })
-        console.log("Item succesfully updated.")
+        console.log("Item succesfully deleted.")
     } catch (error) {
         console.log("Failed creating item.")
         throw Error
     }
 }
-export default updateItem
+export default deleteItem
