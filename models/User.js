@@ -1,6 +1,6 @@
 // models/Task.js
 import { DataTypes } from 'sequelize';
-import { sequelize } from '@/db/config';
+import { sequelize } from '@/db/core/config';
 
 const User = sequelize.define('User', {
   id: {

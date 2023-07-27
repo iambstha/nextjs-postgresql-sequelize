@@ -1,5 +1,5 @@
 "use client"
-import addUserOp from '@/op/addUser'
+import createuser from '@/op/createUser'
 import { useState } from 'react'
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
   }
   const handleSubmit = async (e) => {
     e.preventDefault();
-    addUserOp(fname,lname)
+    createuser(fname,lname)
     setFname('')
     setLname('')
   };

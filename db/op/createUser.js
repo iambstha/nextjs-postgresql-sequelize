@@ -1,3 +1,4 @@
+"use server"
 
 import User from "@/models/User";
 
@@ -8,7 +9,6 @@ const createuser = async (fname, lname) => {
       lname,
       completed: false,
     });
-    return task;
   } catch (error) {
     console.log(error)
     console.error('Error creating task:', error);
@@ -16,4 +16,4 @@ const createuser = async (fname, lname) => {
   }
 };
 
-export { createuser };
+export default createuser
