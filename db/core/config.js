@@ -1,8 +1,7 @@
-
 const { Sequelize } = require('sequelize');
 
 const username = 'postgres';
-const password = 'bishal@123'; // Password contains an "@" symbol
+const password = 'bishal@123';
 const host = 'localhost';
 const port = 5432;
 const databaseName = 'testseq';
@@ -19,8 +18,6 @@ const sequelize = new Sequelize(`postgres://${username}:${passwordEncoded}@${hos
     } catch (error) {
         console.error('Sequelize synchronization error:', error);
     }
-
-    // Start your application here
 })();
 async function testConnection() {
     try {

@@ -1,10 +1,9 @@
 "use server"
-
 import User from "@/models/User";
 
 const createuser = async (fname, lname) => {
   try {
-    const task = await User.create({
+    await User.create({
       fname,
       lname,
       completed: false,
