@@ -1,10 +1,7 @@
-// models/Task.js
 import { DataTypes } from 'sequelize';
 import { sequelize } from '@/db/core/config';
 
-import Question from './Question';
-
-const User = sequelize.define('User', {
+const Submission = sequelize.define('Submission', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
@@ -18,16 +15,10 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  completed: {
-    type: DataTypes.BOOLEAN,
+  selectedOptions: {
+    type: DataTypes.JSON, // Assuming you want to store the selected options as JSON data
     allowNull: false,
-    defaultValue: false,
   },
 });
 
-User.associate = (models) => {
-  User.hasMany(models.Question);
-};
-
-
-export default User;
+export default Submission;

@@ -11,6 +11,10 @@ const Nav = () => {
                 <li><Link href='/users'>Users</Link></li>
                 <li><Link href='/items/add-item'>Add Item</Link></li>
                 <li><Link href='/items'>Items</Link></li>
+                <li><Link href='/quiz/questions'>Questions</Link></li>
+                <li><Link href='/quiz/add-question'>Add Questions</Link></li>
+                <li><Link href='/images/add-image'>Add Image</Link></li>
+                <li><Link href='/images'>Images</Link></li>
             </ul>
         </nav>
     </div>

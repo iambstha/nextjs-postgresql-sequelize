@@ -24,14 +24,6 @@ const page = () => {
   }, []);
 
   return (
-    // <div className=' flex flex-col justify-center items-center w-full '>
-    //   <h1 className=' p-4 '>All Users</h1>
-    //   <ul className=' flex gap-4 flex-wrap '>
-    //     {users && users.map(user => (
-    //       <li key={user.id}>{user.fname} {user.lname}</li>
-    //     ))}
-    //   </ul>
-    // </div>
 
 <div>
 <h1>All Users</h1>

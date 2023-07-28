@@ -21,29 +21,6 @@ export default function Home() {
     setFname('')
     setLname('')
   };
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault(); // Prevent form submission
-  
-  //   const data = {
-  //     fname,
-  //     lname
-  //   };
-  
-  //   try {
-  //     const response = await fetch('http://localhost:3000/api/users', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       body: JSON.stringify(data)
-  //     });
-  
-  //     // Handle the response as needed
-  //   } catch (error) {
-  //     console.error('Error submitting form:', error);
-  //   }
-  // }
   
   return (
       <div className=' m-2 '>
